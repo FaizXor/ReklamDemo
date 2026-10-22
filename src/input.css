@@ -32,6 +32,21 @@
   animation: scrollVertical 15s linear infinite;
 }
 
+@keyframes infinite-scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll-x {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll-x 20s linear infinite;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
